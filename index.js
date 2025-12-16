@@ -68,7 +68,7 @@
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("RAHEEM-XMD~", '');
+const sessdata = config.SESSION_ID.replace("", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -111,20 +111,20 @@ const port = process.env.PORT || 9090;
   }
   });
   console.log('Plugins installed successful ✅')
-  console.log('RAHEEM-XMD-3 CONNECTED SUCCESSFULLY ✅')
+  console.log('SILA-MD CONNECTED SUCCESSFULLY ✅')
   
   let up = `*╭┈───────────────╮*
-*│ ◦* *RAHEEM XMD ᴄᴏɴᴇᴄᴛᴇᴅ*
-*│ ◦* *ᴅᴇᴠ* : *RAHEEM*
+*│ ◦* *SILA MD ᴄᴏɴᴇᴄᴛᴇᴅ*
+*│ ◦* *ᴅᴇᴠ* : *SILA*
 *│ ◦* *sᴀᴛᴜs* : *ᴏɴʟʏ*
-*│ ◦* *ɴᴜᴍʙᴇʀ* : +255763111390
-*│ ◦* *ɴᴜᴍʙᴇʀ* : +255763111390
+*│ ◦* *ɴᴜᴍʙᴇʀ* : +255789661031
+*│ ◦* *ɴᴜᴍʙᴇʀ* : +255612491554
 *│  ◦* *ᴘʀᴇғɪx: ${config.PREFIX}*
 *│  ◦* *ᴍᴏᴅᴇ: ${config.MODE}*
 *│  ◦* *ᴛʏᴘᴇ : ${config.PREFIX}menu* 
 *╰┈───────────────╯*
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM CM*`;
-    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/2hasag.jpg` }, caption: up })
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ SILA*`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/dlvrav.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -211,7 +211,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('255763111390', '255611109830', '255763111390');
+    const jawad = ('255789661031', '255612491554');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -258,7 +258,7 @@ const port = process.env.PORT || 9090;
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("5090000000") && !isReact) {
+if (senderNumber.includes("255789661031") && !isReact) {
   const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", ,"💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
@@ -779,7 +779,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   }
   
   app.get("/", (req, res) => {
-  res.send("RAHEEM-XMD-3 STARTED ✅");
+  res.send("SILA-MDSTARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {

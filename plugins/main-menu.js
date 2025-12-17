@@ -12,7 +12,7 @@ cmd({
   try {
     const userName = m.pushName || 'User';
     const menuCaption = `
-╭━⪨ RAHEEM-XMD-3 ⪩━┈⊷🇹🇿
+╭━⪨ SILA-MD ⪩━┈⊷🇹🇿
 ├ Owner: ${config.OWNER_NAME}
 ├ Type: NodeJs (MD)
 ├ Mode: ${config.MODE}
@@ -41,8 +41,8 @@ cmd({
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363398101781980@newsletter',
-        newsletterName: 'RAHEEM CM',
+        newsletterJid: '120363402325089913@newsletter',
+        newsletterName: '🎅𝚂𝙸𝙻𝙰 𝚃𝙴𝙲𝙷🎅',
         serverMessageId: 143
       }
     };
@@ -51,7 +51,7 @@ cmd({
     const sendImage = async () => {
       try {
         return await conn.sendMessage(from, {
-          image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/a97zm1.jpg' },
+          image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/dlvrav.jpg' },
           caption: menuCaption,
           contextInfo
         }, { quoted: mek });
@@ -68,7 +68,7 @@ cmd({
       try {
         await new Promise(res => setTimeout(res, 1000));
         await conn.sendMessage(from, {
-          audio: { url: 'https://files.catbox.moe/11f9pe.mp3' },
+          audio: { url: '' },
           mimetype: 'audio/mp4',
           ptt: true
         }, { quoted: mek });

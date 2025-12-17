@@ -1,7 +1,7 @@
 const config = require('../config');
 const { cmd } = require('../command');
 
-const MUSIC_URL = "https://files.catbox.moe/o919rq.mp3"; // Customize if needed
+const MUSIC_URL = ""; // Customize if needed
 
 cmd({
     pattern: "ping",
@@ -60,8 +60,8 @@ async (conn, mek, m, { from, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363399470975987@newsletter',
-                    newsletterName: config.BOT_NAME || 'RAHEEM-XMD-3',
+                    newsletterJid: '120363402325089913@newsletter',
+                    newsletterName: config.BOT_NAME || '🎅𝚂𝙸𝙻𝙰 𝚃𝙴𝙲𝙷🎅',
                     serverMessageId: 143
                 }
             }
